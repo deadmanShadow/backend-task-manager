@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 const uri = process.env.DATABASE_URI;
+// mongoDB uri added on .env
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
